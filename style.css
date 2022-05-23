@@ -1,0 +1,47 @@
+body, body * {
+    margin : 0; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+    user-select: none;
+}
+
+img.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.preload {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+}
+
+.fullscreen-button {
+    position: absolute;
+    margin: 16px;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url(assets/fullscreen.svg);
+    background-size: 100%;
+}
